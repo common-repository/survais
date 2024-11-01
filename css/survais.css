@@ -1,0 +1,158 @@
+button {
+    padding: 7px 15px;
+    border-radius: 3px;
+    border: 0;
+    background: #1E88E5;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.debug-bar{
+	display: none;
+}
+
+.login-forms{
+	max-width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.user-bar {
+    padding: 5px 0;
+    border-bottom: 1px solid #cacaca;
+    font-size: 15px;
+    color: #000;
+    margin: 15px 0;
+    text-align: right;
+    font-size: 13px;
+}
+
+.survais-view {
+	display: none;
+}
+
+.survai {
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,.25);
+  z-index: 2;
+}
+
+.active-survai {
+  border: 3px solid #81C784;
+  background: #E8F5E9;
+  font-weight: 500;
+  color: #263238;
+  border-radius: 2px;
+}
+
+.survai-title {
+  cursor: default;
+	padding: 20px 15px;
+  font-size: 16px;
+  transition: all 0.25s;
+}
+
+.survai-title:hover{
+	color: #000;
+	background: #E3F2FD;
+}
+
+.enable-btn {
+    float: right;
+    margin: 0;
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+    border: 0;
+    padding: 5px 10px;
+    background: #4CAF50;
+    color: #fff;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.enable-btn:hover{
+	background: #43A047;
+}
+
+.enable-btn.disabled {
+    background: #D32F2F;
+}
+.enable-btn.disabled:hover{
+    background: #C62828;
+}
+
+.enable-btn:disabled:hover,
+.enable-btn:disabled {
+    background: #BDBDBD;
+    cursor: default;
+}
+
+/* loader */
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #0080ff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #0080ff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+/* end loader */
